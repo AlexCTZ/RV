@@ -14,3 +14,5 @@ ProjetRA/RV — partie RV éditeur de niveaux
 | VR-FP2-1   | Placement et snap                                | À faire    |
 | VR-FP2-2   | Verrouiller un élément                           | À fair     |
 | VR-FP2-3   | Paramétrage des éléments de la plateforme mobile| À faire  |
+
+Adapter les plateformes pour qu'elles aient les memes tailles que dans le multi

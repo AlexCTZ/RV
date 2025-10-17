@@ -5,14 +5,15 @@ using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
 
 
-
 public class SaveManager : MonoBehaviour
 {
     private string savePath;
+    private AudioSource saveSound;
 
     private void Awake()
     {
         savePath = Path.Combine(Application.streamingAssetsPath, "save.json");
+        saveSound = GetComponent<AudioSource>();
     }
 
     //Sauvegarde tous les objets avec AddressableObject
@@ -33,7 +34,7 @@ public class SaveManager : MonoBehaviour
 
         string json = JsonUtility.ToJson(data, true);
         File.WriteAllText(savePath, json);
-
+        saveSound.Play();
         Debug.Log($"Sauvegarde de {data.objects.Count} objets -> {savePath}");
     }
 }

@@ -1,13 +1,15 @@
 ﻿using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.InputSystem;
+using Unity.VisualScripting;
 
 [RequireComponent(typeof(XRGrabInteractable))]
 public class LockableGrabbable : MonoBehaviour
 {
-    private XRGrabInteractable grabInteractable;
+    private HoverOnlyInteractable grabInteractable;
     private bool isLocked = false;
     private bool isHovered = false;
+    private Rigidbody rigidbody;
 
     [Header("Input")]
     [Tooltip("Action Input System (ex: bouton A ou X)")]
@@ -20,7 +22,8 @@ public class LockableGrabbable : MonoBehaviour
 
     private void Awake()
     {
-        grabInteractable = GetComponent<XRGrabInteractable>();
+        rigidbody = GetComponent<Rigidbody>();
+        grabInteractable = GetComponent<HoverOnlyInteractable>();
 
         // On écoute les événements de survol
         grabInteractable.hoverEntered.AddListener(OnHoverEnter);
@@ -64,13 +67,13 @@ public class LockableGrabbable : MonoBehaviour
 
         if (isLocked)
         {
-            // Retire toutes les couches d’interaction (impossible à grab)
-            grabInteractable.interactionLayers = InteractionLayerMask.GetMask(noneLayer);
+            grabInteractable.isLocked = true;
+            
         }
         else
         {
-            // Restaure la couche normale
-            grabInteractable.interactionLayers = InteractionLayerMask.GetMask(unlockedLayer);
+            grabInteractable.isLocked = false;
+
         }
 
         Debug.Log($"{gameObject.name} → {(isLocked ? "Verrouillé" : "Déverrouillé")}");

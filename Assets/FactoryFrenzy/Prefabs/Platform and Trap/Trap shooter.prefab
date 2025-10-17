@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 5512680820403372763}
   - component: {fileID: 4780159280946590086}
   - component: {fileID: 7854108373896239500}
+  - component: {fileID: 2339285411454992987}
   m_Layer: 0
   m_Name: Trap shooter
-  m_TagString: Untagged
+  m_TagString: Spawnable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 40, y: 40, z: 40}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6926897154087101778}
@@ -235,6 +236,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34a9de467f3900649b824b5321cebe31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2339285411454992987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4652329573806549489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0ec43a35faac9e47bee37f4f9d0bfbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AdressableName: TRA SHOOTER
 --- !u!1001 &338370507454878209
 PrefabInstance:
   m_ObjectHideFlags: 0

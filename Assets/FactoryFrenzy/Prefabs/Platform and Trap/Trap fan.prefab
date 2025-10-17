@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: -794618729905321140}
   - component: {fileID: -6250148891942923789}
   - component: {fileID: -4795456333462932588}
+  - component: {fileID: 9075257435660183391}
   m_Layer: 0
   m_Name: Trap fan
-  m_TagString: Untagged
+  m_TagString: Spawnable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -235,6 +236,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34a9de467f3900649b824b5321cebe31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &9075257435660183391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4652329573806549489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0ec43a35faac9e47bee37f4f9d0bfbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AdressableName: TRA FAN
 --- !u!1001 &910115789156857328
 PrefabInstance:
   m_ObjectHideFlags: 0

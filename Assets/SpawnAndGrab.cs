@@ -3,6 +3,8 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class SpawnAndGrab : MonoBehaviour
 {
+    private AudioSource spawnSound;
+
     [Header("Références")]
     public GameObject objectToSpawn; // ton prefab
     public XRRayInteractor rightHandInteractor; // main droite
@@ -10,6 +12,11 @@ public class SpawnAndGrab : MonoBehaviour
 
     [Header("Options")]
     public bool spawnInRightHand = true;
+
+    private void Awake()
+    {
+        spawnSound = GetComponent<AudioSource>();
+    }
 
     public void SpawnInHand()
     {
@@ -24,8 +31,7 @@ public class SpawnAndGrab : MonoBehaviour
 
         // Spawn l’objet
         GameObject spawned = Instantiate(objectToSpawn, hand.transform.position, hand.transform.rotation);
+        spawnSound.Play();
 
-        
-        
     }
 }

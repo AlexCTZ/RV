@@ -3,6 +3,7 @@ using System.IO;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
+using UnityEngine.SceneManagement;
 
 
 public class SaveManager : MonoBehaviour
@@ -36,5 +37,9 @@ public class SaveManager : MonoBehaviour
         File.WriteAllText(savePath, json);
         saveSound.Play();
         Debug.Log($"Sauvegarde de {data.objects.Count} objets -> {savePath}");
+    }
+    public void cancel()
+    {
+        SceneManager.LoadScene("Editor");
     }
 }

@@ -15,10 +15,7 @@ public class LockableGrabbable : MonoBehaviour
     [Tooltip("Action Input System (ex: bouton A ou X)")]
     public InputActionReference toggleLockAction;
 
-    [Header("Layers")]
-    [Tooltip("Layer autorisé quand l’objet est déverrouillé")]
-    public string unlockedLayer = "Default";
-    public string noneLayer = "Nothing";
+    
 
     private void Awake()
     {

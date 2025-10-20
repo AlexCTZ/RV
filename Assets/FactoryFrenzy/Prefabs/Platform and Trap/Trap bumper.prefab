@@ -10,9 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 6581443949971158542}
   - component: {fileID: 1781095166415026183}
-  - component: {fileID: 6286451864496398706}
   - component: {fileID: 4203494900538231526}
   - component: {fileID: 6227639061969013827}
+  - component: {fileID: 4783965369285783456}
+  - component: {fileID: -2800682439654504806}
   m_Layer: 0
   m_Name: Trap bumper
   m_TagString: Spawnable
@@ -63,7 +64,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &6286451864496398706
+--- !u!114 &4203494900538231526
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -72,7 +73,32 @@ MonoBehaviour:
   m_GameObject: {fileID: 4652329573806549489}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 34a9de467f3900649b824b5321cebe31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6227639061969013827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4652329573806549489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0ec43a35faac9e47bee37f4f9d0bfbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AdressableName: TRA BUMPER
+--- !u!114 &4783965369285783456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4652329573806549489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a2cd207c98b3de4889f55d9471b010e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 0}
@@ -131,19 +157,7 @@ MonoBehaviour:
       m_Calls: []
   m_Activated:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 4203494900538231526}
-        m_TargetAssemblyTypeName: DestroyOnActivate, Assembly-CSharp
-        m_MethodName: OnActivate
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   m_Deactivated:
     m_PersistentCalls:
       m_Calls: []
@@ -223,7 +237,8 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
---- !u!114 &4203494900538231526
+  isLocked: 0
+--- !u!114 &-2800682439654504806
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -232,22 +247,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 4652329573806549489}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34a9de467f3900649b824b5321cebe31, type: 3}
+  m_Script: {fileID: 11500000, guid: 4718f668eacc266449363d97a9f8cf77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &6227639061969013827
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4652329573806549489}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b0ec43a35faac9e47bee37f4f9d0bfbc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AdressableName: TRA BUMPER
+  toggleLockAction: {fileID: -8027565644917693392, guid: c348712bda248c246b8c49b3db54643f,
+    type: 3}
 --- !u!1 &4758107322952490245
 GameObject:
   m_ObjectHideFlags: 0

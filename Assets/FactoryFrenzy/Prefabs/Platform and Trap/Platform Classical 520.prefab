@@ -10,9 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 6581443949971158542}
   - component: {fileID: 3605601001677026420}
-  - component: {fileID: 2423016104137141759}
   - component: {fileID: 2661749372154735809}
   - component: {fileID: 8506819714039903710}
+  - component: {fileID: -4804814573334357493}
+  - component: {fileID: 4942475750843362467}
   m_Layer: 0
   m_Name: Platform Classical 520
   m_TagString: Spawnable
@@ -69,7 +70,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &2423016104137141759
+--- !u!114 &2661749372154735809
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -78,7 +79,32 @@ MonoBehaviour:
   m_GameObject: {fileID: 4652329573806549489}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 34a9de467f3900649b824b5321cebe31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8506819714039903710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4652329573806549489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0ec43a35faac9e47bee37f4f9d0bfbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AdressableName: PLA520
+--- !u!114 &-4804814573334357493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4652329573806549489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a2cd207c98b3de4889f55d9471b010e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 0}
@@ -137,19 +163,7 @@ MonoBehaviour:
       m_Calls: []
   m_Activated:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2661749372154735809}
-        m_TargetAssemblyTypeName: DestroyOnActivate, Assembly-CSharp
-        m_MethodName: OnActivate
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   m_Deactivated:
     m_PersistentCalls:
       m_Calls: []
@@ -229,7 +243,8 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
---- !u!114 &2661749372154735809
+  isLocked: 0
+--- !u!114 &4942475750843362467
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -238,22 +253,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 4652329573806549489}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34a9de467f3900649b824b5321cebe31, type: 3}
+  m_Script: {fileID: 11500000, guid: 4718f668eacc266449363d97a9f8cf77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &8506819714039903710
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4652329573806549489}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b0ec43a35faac9e47bee37f4f9d0bfbc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AdressableName: PLA520
+  toggleLockAction: {fileID: -8027565644917693392, guid: c348712bda248c246b8c49b3db54643f,
+    type: 3}
 --- !u!1001 &20160872169042945
 PrefabInstance:
   m_ObjectHideFlags: 0

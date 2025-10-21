@@ -420,6 +420,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5850270484652323916, guid: f715841db4b65454ea1800823dd9db09,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8986618625338551625, guid: f715841db4b65454ea1800823dd9db09,
         type: 3}
       propertyPath: m_Name
@@ -531,6 +536,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: AXLE 440MM
+      objectReference: {fileID: 0}
+    - target: {fileID: 9095833306536300335, guid: 56471b5ae2e01724c8e999585498c8c0,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9100483973464694480, guid: 56471b5ae2e01724c8e999585498c8c0,
         type: 3}

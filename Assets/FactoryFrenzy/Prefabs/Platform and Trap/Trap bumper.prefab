@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4201530497037790077}
   - component: {fileID: -5346882705801343862}
   - component: {fileID: 6736065226448272674}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Trap bumper
   m_TagString: Spawnable
   m_Icon: {fileID: 0}
@@ -373,7 +373,7 @@ GameObject:
   - component: {fileID: 8268947158575264841}
   - component: {fileID: 7652108097241174962}
   - component: {fileID: 7877964490430230505}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}

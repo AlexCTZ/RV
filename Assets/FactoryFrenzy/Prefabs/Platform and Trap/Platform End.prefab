@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 283720076196402104}
   - component: {fileID: 4145983451279472696}
   - component: {fileID: 6411661464498510576}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Line
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -118,7 +118,7 @@ GameObject:
   - component: {fileID: 2040152778472565084}
   - component: {fileID: 1236463517278361375}
   - component: {fileID: 5759178152087118952}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Platform End
   m_TagString: Spawnable
   m_Icon: {fileID: 0}
@@ -357,7 +357,7 @@ GameObject:
   - component: {fileID: 4909303329638487599}
   - component: {fileID: 5876662258311572363}
   - component: {fileID: 7871849112984125801}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}

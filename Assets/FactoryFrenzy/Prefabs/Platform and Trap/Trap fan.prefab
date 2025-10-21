@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6427842697400561549}
   - component: {fileID: 2581691602273839102}
   - component: {fileID: -2135827832544407698}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Trap fan
   m_TagString: Spawnable
   m_Icon: {fileID: 0}
@@ -430,6 +430,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: WHEEL
       objectReference: {fileID: 0}
+    - target: {fileID: 8986618625338551625, guid: f715841db4b65454ea1800823dd9db09,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -457,6 +462,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: AXLE 40MM
+      objectReference: {fileID: 0}
+    - target: {fileID: 2471733452472690547, guid: 55046daf3c03fbc42932b243770be8fd,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6606313688231100272, guid: 55046daf3c03fbc42932b243770be8fd,
         type: 3}
@@ -536,6 +546,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: AXLE 440MM
+      objectReference: {fileID: 0}
+    - target: {fileID: 7236808122870960560, guid: 56471b5ae2e01724c8e999585498c8c0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 9095833306536300335, guid: 56471b5ae2e01724c8e999585498c8c0,
         type: 3}

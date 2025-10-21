@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -8635296354979972326}
   - component: {fileID: 878437639724126977}
   - component: {fileID: 5539831938919674204}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Platform Classical 360
   m_TagString: Spawnable
   m_Icon: {fileID: 0}
@@ -385,6 +385,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PROFIL 360MM (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1452948559546534610, guid: 9b8be69d825a0224fb28ae4d6ac858d2,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7281590776085531196, guid: 9b8be69d825a0224fb28ae4d6ac858d2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -463,6 +468,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PROFIL 360MM (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452948559546534610, guid: 9b8be69d825a0224fb28ae4d6ac858d2,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7281590776085531196, guid: 9b8be69d825a0224fb28ae4d6ac858d2,
         type: 3}
@@ -543,6 +553,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PROFIL 360MM (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1452948559546534610, guid: 9b8be69d825a0224fb28ae4d6ac858d2,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7281590776085531196, guid: 9b8be69d825a0224fb28ae4d6ac858d2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -621,6 +636,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PROFIL 360MM (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452948559546534610, guid: 9b8be69d825a0224fb28ae4d6ac858d2,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7281590776085531196, guid: 9b8be69d825a0224fb28ae4d6ac858d2,
         type: 3}
@@ -701,6 +721,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PROFIL 360MM (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1452948559546534610, guid: 9b8be69d825a0224fb28ae4d6ac858d2,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7281590776085531196, guid: 9b8be69d825a0224fb28ae4d6ac858d2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -780,6 +805,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PROFIL 360MM (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1452948559546534610, guid: 9b8be69d825a0224fb28ae4d6ac858d2,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7281590776085531196, guid: 9b8be69d825a0224fb28ae4d6ac858d2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -858,6 +888,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PROFIL 360MM
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452948559546534610, guid: 9b8be69d825a0224fb28ae4d6ac858d2,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7281590776085531196, guid: 9b8be69d825a0224fb28ae4d6ac858d2,
         type: 3}

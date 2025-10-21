@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -3157224755140990788}
   - component: {fileID: -7524939762880276180}
   - component: {fileID: 4447145161993255180}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Platform Move 520
   m_TagString: Spawnable
   m_Icon: {fileID: 0}
@@ -377,7 +377,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8733201799957799457}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TODO MoveManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -416,6 +416,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PROFIL 520MM (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5753445069451088612, guid: e3c4aa245ede86d46a0fc2a384ab5f3f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7499729398764800650, guid: e3c4aa245ede86d46a0fc2a384ab5f3f,
         type: 3}
@@ -496,6 +501,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PROFIL 520MM (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5753445069451088612, guid: e3c4aa245ede86d46a0fc2a384ab5f3f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7499729398764800650, guid: e3c4aa245ede86d46a0fc2a384ab5f3f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -574,6 +584,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PROFIL 520MM (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5753445069451088612, guid: e3c4aa245ede86d46a0fc2a384ab5f3f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7499729398764800650, guid: e3c4aa245ede86d46a0fc2a384ab5f3f,
         type: 3}
@@ -654,6 +669,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PROFIL 520MM (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5753445069451088612, guid: e3c4aa245ede86d46a0fc2a384ab5f3f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7499729398764800650, guid: e3c4aa245ede86d46a0fc2a384ab5f3f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -732,6 +752,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PROFIL 520MM (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5753445069451088612, guid: e3c4aa245ede86d46a0fc2a384ab5f3f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7499729398764800650, guid: e3c4aa245ede86d46a0fc2a384ab5f3f,
         type: 3}
@@ -812,6 +837,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PROFIL 520MM (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5753445069451088612, guid: e3c4aa245ede86d46a0fc2a384ab5f3f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7499729398764800650, guid: e3c4aa245ede86d46a0fc2a384ab5f3f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -890,6 +920,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PROFIL 520MM
+      objectReference: {fileID: 0}
+    - target: {fileID: 5753445069451088612, guid: e3c4aa245ede86d46a0fc2a384ab5f3f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7499729398764800650, guid: e3c4aa245ede86d46a0fc2a384ab5f3f,
         type: 3}

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -9206001730876107811}
   - component: {fileID: 1521933192255913042}
   - component: {fileID: 210615497335891928}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Platform Trampoline
   m_TagString: Spawnable
   m_Icon: {fileID: 0}
@@ -428,6 +428,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ANGLE LIMITER
+      objectReference: {fileID: 0}
+    - target: {fileID: 3869180057623027334, guid: 93e656952ec0e0b4aac66e5330fc0d0f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

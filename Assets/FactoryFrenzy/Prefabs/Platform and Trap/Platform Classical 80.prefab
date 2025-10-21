@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 648271315391466694}
   - component: {fileID: 2379369086670756879}
   - component: {fileID: 8148184727828715109}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SnapCollider (3)
   m_TagString: Snap
   m_Icon: {fileID: 0}
@@ -134,7 +134,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3765313076181788734}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Where
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -168,7 +168,7 @@ GameObject:
   - component: {fileID: 4695839181067170155}
   - component: {fileID: 2781392399098793752}
   - component: {fileID: 7069123259540472827}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SnapCollider (2)
   m_TagString: Snap
   m_Icon: {fileID: 0}
@@ -293,7 +293,7 @@ GameObject:
   - component: {fileID: 8966217431357067149}
   - component: {fileID: 6740349862115750955}
   - component: {fileID: 5311101486215812547}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SnapCollider
   m_TagString: Snap
   m_Icon: {fileID: 0}
@@ -415,7 +415,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6998180981300041500}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Snaps
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -456,7 +456,7 @@ GameObject:
   - component: {fileID: 8587526323689662957}
   - component: {fileID: 8368240137772386438}
   - component: {fileID: 2752550905187803286}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Platform Classical 80
   m_TagString: Spawnable
   m_Icon: {fileID: 0}
@@ -818,7 +818,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4752178300186024937}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Where
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -852,7 +852,7 @@ GameObject:
   - component: {fileID: 1445461010098662279}
   - component: {fileID: 1311165967650871387}
   - component: {fileID: 6549402209448440458}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SnapCollider (1)
   m_TagString: Snap
   m_Icon: {fileID: 0}
@@ -974,7 +974,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 216421414084814017}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Where
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1005,7 +1005,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5391184517715151979}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Where
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1090,6 +1090,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PROFIL 80MM (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6047082449289279805, guid: 9708383209f1cf24398f39f89e8765d1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8512503912267073334, guid: 9708383209f1cf24398f39f89e8765d1,
         type: 3}
       propertyPath: m_IsTrigger
@@ -1168,6 +1173,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PROFIL 80MM (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6047082449289279805, guid: 9708383209f1cf24398f39f89e8765d1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8512503912267073334, guid: 9708383209f1cf24398f39f89e8765d1,
         type: 3}
@@ -1248,6 +1258,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PROFIL 80MM
       objectReference: {fileID: 0}
+    - target: {fileID: 6047082449289279805, guid: 9708383209f1cf24398f39f89e8765d1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8512503912267073334, guid: 9708383209f1cf24398f39f89e8765d1,
         type: 3}
       propertyPath: m_IsTrigger
@@ -1326,6 +1341,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PROFIL 80MM (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6047082449289279805, guid: 9708383209f1cf24398f39f89e8765d1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8512503912267073334, guid: 9708383209f1cf24398f39f89e8765d1,
         type: 3}
@@ -1406,6 +1426,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PROFIL 80MM (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6047082449289279805, guid: 9708383209f1cf24398f39f89e8765d1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8512503912267073334, guid: 9708383209f1cf24398f39f89e8765d1,
         type: 3}
       propertyPath: m_IsTrigger
@@ -1485,6 +1510,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PROFIL 80MM (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 6047082449289279805, guid: 9708383209f1cf24398f39f89e8765d1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8512503912267073334, guid: 9708383209f1cf24398f39f89e8765d1,
         type: 3}
       propertyPath: m_IsTrigger
@@ -1563,6 +1593,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PROFIL 80MM (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6047082449289279805, guid: 9708383209f1cf24398f39f89e8765d1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8512503912267073334, guid: 9708383209f1cf24398f39f89e8765d1,
         type: 3}

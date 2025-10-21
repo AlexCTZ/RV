@@ -9,10 +9,10 @@ ProjetRA/RV — partie RV éditeur de niveaux
 | VR-FP1-2   | Sélectionner et créer des éléments dans une UI | Fait   |
 | VR-FP1-3   | Attraper et placer des objets                   | Fait     |
 | VR-FP1-4   | Supprimer des éléments du niveau                | Fait       |
-| VR-FP1-5   | Export JSON du niveau                            | À faire    |
-| VR-FP1-6   | Son et vibration                                 | À faire  |
+| VR-FP1-5   | Export JSON du niveau                            | Fait   |
+| VR-FP1-6   | Son et vibration                                 | Fait  |
 | VR-FP2-1   | Placement et snap                                | À faire    |
-| VR-FP2-2   | Verrouiller un élément                           | À fair     |
+| VR-FP2-2   | Verrouiller un élément                           |Fait     |
 | VR-FP2-3   | Paramétrage des éléments de la plateforme mobile| À faire  |
 
-Adapter les plateformes pour qu'elles aient les memes tailles que dans le multi
+

@@ -1932,9 +1932,9 @@ MonoBehaviour:
   Active: save1.json
   EndPrefab: {fileID: 4652329573806549489, guid: eac2e128ec83cff40ae9c74a5da924bc,
     type: 3}
-  Panel: {fileID: 2140760928}
+  PanelLoad: {fileID: 2140760928}
   files: []
-  panel: {fileID: 2140760929}
+  panelLoadtransform: {fileID: 2140760929}
   buttonPrefab: {fileID: 1009819482383057084, guid: 9b21327e962b52a499377a1afcb6029e,
     type: 3}
 --- !u!82 &367781592

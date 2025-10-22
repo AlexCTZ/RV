@@ -17,9 +17,9 @@ public class SaveManager : MonoBehaviour
     private string DefaultSavePath;
     public GameObject EndPrefab;
     private AudioSource saveSound;
-    public GameObject Panel;
+    public GameObject PanelLoad;
     public string[] files;
-    [SerializeField] private Transform panel;      
+    [SerializeField] private Transform panelLoadtransform;      
     [SerializeField] private GameObject buttonPrefab; 
     private bool isSaveActive = false;
 
@@ -89,8 +89,8 @@ public class SaveManager : MonoBehaviour
 
     public void Load()
     {
-        Panel.SetActive(true);
-        GameObject Base = Instantiate(buttonPrefab, panel);
+        PanelLoad.SetActive(true);
+        GameObject Base = Instantiate(buttonPrefab, panelLoadtransform);
         var txtbase = Base.GetComponentInChildren<TMPro.TextMeshProUGUI>();
         txtbase.text = "Niveau de base";
         Base.GetComponent<Button>().onClick.AddListener(() =>
@@ -101,12 +101,12 @@ public class SaveManager : MonoBehaviour
             GameObject[] arr = GameObject.FindGameObjectsWithTag("LoadButton");
             var list = new List<GameObject>(arr);
             foreach (var go in list) Destroy(go);
-            Panel.SetActive(false);
+            PanelLoad.SetActive(false);
             
         });
 
         foreach (string file in files) {
-            GameObject btnGO = Instantiate(buttonPrefab, panel);
+            GameObject btnGO = Instantiate(buttonPrefab, panelLoadtransform);
 
             // Modifier le texte du bouton (TextMeshProUGUI ou Text)
             var txt = btnGO.GetComponentInChildren<TMPro.TextMeshProUGUI>();
@@ -205,7 +205,7 @@ public class SaveManager : MonoBehaviour
         {
             yield return StartCoroutine(SpawnMovesFromAddressables(movData));
         }
-        Panel.SetActive(false);
+        PanelLoad.SetActive(false);
         
 
 

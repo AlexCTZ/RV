@@ -72,19 +72,27 @@ public class SaveManager : MonoBehaviour
     }
     public void cancel(bool isRespawn = true)
     {
+        
         GameObject[] arr = GameObject.FindGameObjectsWithTag("Spawnable");
         var list = new List<GameObject>(arr);
         foreach (var go in list) Destroy(go);
         GameObject[] arr2 = GameObject.FindGameObjectsWithTag("Movable");
         var list2 = new List<GameObject>(arr2);
         foreach (var go in list2) Destroy(go);
-        if (isRespawn)Instantiate(EndPrefab);
+        if (isRespawn && !isSaveActive)
+        {
+            Debug.Log("test");
+            Instantiate(EndPrefab);
+        }
+
         if (isSaveActive)
         {
+
             LoadLevel(savePath);
         }
 
-        
+
+
     }
 
     public void Load()
@@ -114,17 +122,44 @@ public class SaveManager : MonoBehaviour
             
             btnGO.GetComponent<Button>().onClick.AddListener(() =>
             {
-                
-                cancel(false);
+
+                /*cancel(false);
                 isSaveActive = true;
                 savePath = file;
                 LoadLevel(file);
                 GameObject[] arr = GameObject.FindGameObjectsWithTag("LoadButton");
                 var list = new List<GameObject>(arr);
+                foreach (var go in list) Destroy(go);*/
+
+                StartCoroutine(DoLoad(file));
+
+                GameObject[] arr = GameObject.FindGameObjectsWithTag("LoadButton");
+                var list = new List<GameObject>(arr);
                 foreach (var go in list) Destroy(go);
+                isSaveActive = true;
             });
         }
     }
+    private IEnumerator DoLoad(string file)
+    {
+        DeLoadLevel();
+        yield return null;
+        savePath = file;
+        
+        
+        LoadLevel(file);
+    }
+
+    private void DeLoadLevel()
+    {
+        GameObject[] arr = GameObject.FindGameObjectsWithTag("Spawnable");
+        var list = new List<GameObject>(arr);
+        foreach (var go in list) Destroy(go);
+        GameObject[] arr2 = GameObject.FindGameObjectsWithTag("Movable");
+        var list2 = new List<GameObject>(arr2);
+        foreach (var go in list2) Destroy(go);
+    }
+
 
 
 

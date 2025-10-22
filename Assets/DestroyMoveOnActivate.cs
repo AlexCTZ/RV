@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DestroyMoveOnActivate : MonoBehaviour
 {
+    public GameObject Parent;
     private AudioSource destroySound;
 
     private void Awake()
@@ -20,6 +21,7 @@ public class DestroyMoveOnActivate : MonoBehaviour
     private IEnumerator DestroyAfterSound()
     {
         yield return new WaitWhile(() => destroySound.isPlaying);
-        Destroy(gameObject.transform.parent);
+        Destroy(Parent);
+        Destroy(gameObject);
     }
 }

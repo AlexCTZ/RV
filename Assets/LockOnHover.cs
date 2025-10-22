@@ -30,13 +30,20 @@ public class LockableGrabbable : MonoBehaviour
     private void OnEnable()
     {
         if (toggleLockAction != null)
+        {
+            toggleLockAction.action.Enable();
             toggleLockAction.action.performed += OnToggleLockPressed;
+        }
     }
 
     private void OnDisable()
     {
         if (toggleLockAction != null)
+        {
             toggleLockAction.action.performed -= OnToggleLockPressed;
+
+            toggleLockAction.action.Disable();
+        }
     }
 
     private void OnDestroy()

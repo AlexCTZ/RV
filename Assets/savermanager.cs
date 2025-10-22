@@ -21,6 +21,7 @@ public class SaveManager : MonoBehaviour
     public string[] files;
     [SerializeField] private Transform panel;      
     [SerializeField] private GameObject buttonPrefab; 
+    private bool isSaveActive = false;
 
 
     private void Awake()
@@ -36,6 +37,7 @@ public class SaveManager : MonoBehaviour
     public void Save()
     {
         var allObjects = GameObject.FindGameObjectsWithTag("Spawnable");
+        var allMove = GameObject.FindGameObjectsWithTag("Movable");
         SaveData data = new SaveData();
 
         foreach (var obj in allObjects)
@@ -43,10 +45,24 @@ public class SaveManager : MonoBehaviour
             data.objects.Add(new SpawnedObjectData
             {
                 name = obj.GetComponent<PrefabName>().AdressableName,
-                position = obj.transform.position,
+                position = new Vector3(obj.transform.position.x, obj.transform.position.y-10, obj.transform.position.z),
                 rotation = obj.transform.rotation
             });
         }
+        Debug.Log("objets normaux loadés");
+
+        foreach (var obj in allMove)
+        {
+            data.moves.Add(new SpawnedMoveData
+            {
+                name = obj.GetComponent<PrefabName>().AdressableName,
+                position = new Vector3(obj.transform.Find("Platform Move 520").position.x, obj.transform.Find("Platform Move 520").position.y - 10, obj.transform.Find("Platform Move 520").position.z),
+                rotation = new Quaternion(0, obj.transform.Find("Platform Move 520").rotation.y, 0, obj.transform.Find("Platform Move 520").rotation.w),
+                Endposition = new Vector3(obj.transform.Find("End").position.x, obj.transform.Find("End").position.y - 10, obj.transform.Find("End").position.z),
+                Speed = obj.GetComponent<SpeedDefiner>().speed
+            });
+        }
+        Debug.Log("objets mouvants loadés");
 
         string json = JsonUtility.ToJson(data, true);
         File.WriteAllText(savePath, json);
@@ -59,7 +75,16 @@ public class SaveManager : MonoBehaviour
         GameObject[] arr = GameObject.FindGameObjectsWithTag("Spawnable");
         var list = new List<GameObject>(arr);
         foreach (var go in list) Destroy(go);
-        if(isRespawn)Instantiate(EndPrefab);
+        GameObject[] arr2 = GameObject.FindGameObjectsWithTag("Movable");
+        var list2 = new List<GameObject>(arr2);
+        foreach (var go in list2) Destroy(go);
+        if (isRespawn)Instantiate(EndPrefab);
+        if (isSaveActive)
+        {
+            LoadLevel(savePath);
+        }
+
+        
     }
 
     public void Load()
@@ -70,6 +95,7 @@ public class SaveManager : MonoBehaviour
         txtbase.text = "Niveau de base";
         Base.GetComponent<Button>().onClick.AddListener(() =>
         {
+            isSaveActive = false;
             savePath = DefaultSavePath;
             cancel();
             GameObject[] arr = GameObject.FindGameObjectsWithTag("LoadButton");
@@ -88,7 +114,9 @@ public class SaveManager : MonoBehaviour
             
             btnGO.GetComponent<Button>().onClick.AddListener(() =>
             {
+                
                 cancel(false);
+                isSaveActive = true;
                 savePath = file;
                 LoadLevel(file);
                 GameObject[] arr = GameObject.FindGameObjectsWithTag("LoadButton");
@@ -173,6 +201,10 @@ public class SaveManager : MonoBehaviour
         {
             yield return StartCoroutine(SpawnFromAddressables(objData));
         }
+        foreach (var movData in sceneData.moves)
+        {
+            yield return StartCoroutine(SpawnMovesFromAddressables(movData));
+        }
         Panel.SetActive(false);
         
 
@@ -194,7 +226,7 @@ public class SaveManager : MonoBehaviour
                 yield break;
             }
 
-            GameObject instance = Instantiate(prefab, objData.position, objData.rotation);
+            GameObject instance = Instantiate(prefab, new Vector3(objData.position.x, objData.position.y+10, objData.position.z), objData.rotation);
             Debug.Log($"Spawned network object: {objData.name} à {objData.position}");
         }
         else
@@ -202,5 +234,31 @@ public class SaveManager : MonoBehaviour
             Debug.LogWarning($"Échec du chargement de l'adressable: {objData.name}");
         }
         
+    }
+
+    private IEnumerator SpawnMovesFromAddressables(SpawnedMoveData data)
+    {
+        AsyncOperationHandle<GameObject> handle = Addressables.LoadAssetAsync<GameObject>(data.name);
+        yield return handle;
+
+        if (handle.Status == AsyncOperationStatus.Succeeded)
+        {
+            GameObject prefab = handle.Result;
+
+            if (prefab == null)
+            {
+                Debug.LogWarning($"Prefab introuvable pour l'adressableKey: {data.name}");
+                yield break;
+            }
+
+            GameObject instance = Instantiate(prefab, new Vector3(data.position.x, data.position.y + 10,data.position.z),data.rotation);
+            instance.transform.Find("End").position = new Vector3(data.Endposition.x, data.Endposition.y + 10,data.Endposition.z);
+            instance.GetComponent<SpeedDefiner>().speed = data.Speed;
+            Debug.Log($"Spawned network object: {data.name} à {data.position}");
+        }
+        else
+        {
+            Debug.LogWarning($"Échec du chargement de l'adressable: {data.name}");
+        }
     }
 }

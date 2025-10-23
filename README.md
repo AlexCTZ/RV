@@ -36,12 +36,5 @@ Projet RA/RV — partie VR permettant d’éditer des niveaux, puis de les expor
 - **Supprimer un objet** : `Activate` avec un objet attrapé
 - **Verrouiller la position d’un objet** : `A` en pointant l’objet
 
----
 
-## 🎯 Objectif du POC VR
-
-Valider la capacité à :
-- Créer un niveau jouable en VR
-- Manipuler et configurer ses éléments intuitivement
-- Exporter le tout en **JSON** pour consommation par le module PC multijoueur
 
